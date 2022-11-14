@@ -43,11 +43,11 @@ export const StyledNavLinks = styled.nav`
     @media screen and (max-width: 800px) {
       padding: 2.8rem;
       position: absolute;
-      top: 10rem;
-      height: 20rem;
-      border-radius: 0.6rem;
+      top: 6.5rem;
+      height: 25rem;
+
       left: 50%;
-      width: 80%;
+      width: 100%;
       background-color: var(--yellow);
       color: var(--main-black);
       flex-direction: column;
