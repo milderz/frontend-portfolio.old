@@ -89,20 +89,29 @@ export const StyledHero = styled.section`
       }
     }
 
-    button {
-      background: none;
-      border: none;
-      color: var(--yellow);
-      font-size: 1.6rem;
-      cursor: pointer;
+    .more-about {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      :hover {
+        text-decoration: underline;
+        text-decoration-color: var(--yellow);
+      }
+      p {
+        color: var(--yellow);
+        font-size: 1.6rem;
+      }
 
       svg {
+        height: 2rem;
         margin-left: 1.6rem;
+        color: var(--yellow);
       }
     }
 
     @media screen and (max-width: 700px) {
-      flex: 2;
+      flex: 1;
     }
   }
 

@@ -42,9 +42,9 @@ function Hero() {
             <h4>Frontend Developer </h4>
             <p>Developing modern websites that help businesses to grow!</p>
           </div>
-          <button>
-            More about me <FontAwesomeIcon icon={faArrowRight} />
-          </button>
+          <a className="more-about" href="#about">
+            <p>More about me </p> <FontAwesomeIcon icon={faArrowRight} />
+          </a>
         </div>
       </div>
     </StyledHero>
