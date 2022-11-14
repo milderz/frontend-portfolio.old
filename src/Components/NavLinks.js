@@ -5,13 +5,13 @@ function NavLinks({ mobileBtnActive }) {
     <StyledNavLinks mobileBtnActive={mobileBtnActive}>
       <ul>
         <li>
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#">About me</a>
+          <a href="#about">About me</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </StyledNavLinks>

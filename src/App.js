@@ -25,7 +25,7 @@ function App() {
           title="More about me"
           subtitle="Get to know more about me"
         />
-        <div className="about-me-text">
+        <div className="about-me-text" id="about">
           <p>
             I'm a frontend developer creating modern websites and apps that help
             businesses to grow and stand out over their competitors.

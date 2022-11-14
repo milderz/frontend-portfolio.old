@@ -1,5 +1,4 @@
 import { StyledProjectCard } from "./Styles/ProjectCard.styled";
-import Tag from "./Tag";
 
 function ProjectCard({ tags }) {
   return (

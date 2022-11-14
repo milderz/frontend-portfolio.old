@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+
 import { StyledMobileMenu } from "./Styles/MobileMenu.styled";
 
 function MobileMenu({ handleMobileMenuClick, mobileBtnActive }) {

@@ -11,12 +11,20 @@ function Footer() {
         </div>
         <ul>
           <li>
-            <a href="#">
+            <a
+              href="https://github.com/milderz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/milder-navarro-068267216/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>

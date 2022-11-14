@@ -29,7 +29,7 @@ function ContactSection() {
         </div>
       ) : (
         <>
-          <div className="contact-section-left">
+          <div className="contact-section-left" id="contact">
             <form action="submit">
               <label>
                 <input type="text" placeholder="Your name" />
@@ -52,7 +52,11 @@ function ContactSection() {
 
       <div className="contact-section-right">
         <p>Let's talk</p>
-        <a href="#">
+        <a
+          href="mailto: mzunax@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           mzunax@gmail.com{" "}
           <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
         </a>
