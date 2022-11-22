@@ -122,8 +122,14 @@ export const StyledHero = styled.section`
     li {
       padding-right: 2rem;
       a {
+        :hover {
+          svg {
+            color: var(--yellow);
+            transition: color 0.2s ease;
+          }
+        }
         svg {
-          color: var(--yellow);
+          color: var(--main-white);
           font-size: 2rem;
         }
       }
