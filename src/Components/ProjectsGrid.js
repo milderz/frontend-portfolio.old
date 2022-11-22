@@ -50,7 +50,7 @@ function ProjectsGrid() {
           </>
         }
         projectName="Designo Studio"
-        projectDescription="A portfolio website for a design agency, developed using Reac and Styled Components"
+        projectDescription="A portfolio website for a design agency, developed using React and Styled Components"
         webLink="https://designostudio.netlify.app/"
         githubLink="https://github.com/milderz/designo"
         bgImg="/designo.jpg"
