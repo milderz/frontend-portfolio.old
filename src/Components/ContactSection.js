@@ -1,3 +1,5 @@
+import { useState } from "react";
+import React, { useRef } from "react";
 import MainButton from "./MainButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StyledContactSection } from "./Styles/ContactSection.styled";
@@ -6,9 +8,11 @@ import {
   faArrowRight,
   faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function ContactSection() {
+  const form = useRef();
+
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -55,19 +59,38 @@ function ContactSection() {
       formData.email !== "" &&
       formData.message !== ""
     ) {
+      sendEmail();
       setFormSubmitted(true);
       setFormData({
         name: "",
         email: "",
         message: "",
       });
-      console.log(formData);
 
       setTimeout(() => {
         setFormSubmitted(false);
       }, 5000);
     }
   };
+
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        "service_tfdrsqd",
+        "template_gpor08u",
+        form.current,
+        "flzT7xi3wlITXflpu"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <StyledContactSection>
       {formSubmitted ? (
@@ -78,7 +101,7 @@ function ContactSection() {
       ) : (
         <>
           <div className="contact-section-left" id="contact">
-            <form action="submit">
+            <form action="submit" ref={form}>
               <label className={`${emptyNameInput && "empty-input"}`}>
                 <input
                   type="text"
