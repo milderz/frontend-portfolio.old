@@ -31,8 +31,8 @@ function App() {
             businesses to grow and stand out over their competitors.
           </p>
           <p>
-            I have an excellent knowledge of technologies like HTML, CSS and
-            Javascript and I'm currently learning React JS.
+            I have an excellent knowledge of technologies like HTML, CSS,
+            Javascript, SASS, Styled Components and React JS.
           </p>
           <p>I'm also learning UX/UI basics to complement my coding skills.</p>
           <MainButton btnText="Download CV" icon={faDownload} />
