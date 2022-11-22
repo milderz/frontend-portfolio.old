@@ -11,7 +11,6 @@ export const StyledProjectCard = styled.div`
 
   :hover {
     border: 0.2rem solid var(--yellow);
-
     h4 {
       color: var(--yellow);
     }
@@ -19,8 +18,10 @@ export const StyledProjectCard = styled.div`
 
   .thumbnail {
     flex: 23.6rem;
+
     background-color: var(--yellow);
-    background: url(${({ bgImg }) => bgImg && bgImg});
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+      url(${({ bgImg }) => bgImg && bgImg});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,6 +54,13 @@ export const StyledProjectCard = styled.div`
           height: 2.4rem;
 
           color: var(--main-white);
+          transition: color 0.2s;
+        }
+
+        :hover {
+          svg {
+            color: var(--yellow);
+          }
         }
       }
 
@@ -63,8 +71,8 @@ export const StyledProjectCard = styled.div`
           top: -4.8rem;
           left: 78%;
           transform: translateX(-50%);
-          color: var(--main-black);
-          background-color: var(--yellow);
+          color: var(--main-white);
+          background-color: #000;
           padding: 0.2rem 0.6rem;
           border-radius: 0.4rem;
           width: max-content;
@@ -72,6 +80,7 @@ export const StyledProjectCard = styled.div`
           font-weight: 600;
           opacity: 0;
           transition: opacity 0.2s ease;
+          pointer-events: none;
         }
 
         :hover::after {
