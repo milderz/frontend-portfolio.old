@@ -84,6 +84,24 @@ export const StyledContactSection = styled.div`
   form {
     display: flex;
     flex-direction: column;
+
+    label {
+      height: 5.2rem;
+      margin-bottom: 2.4rem;
+      position: relative;
+    }
+
+    label.empty-input {
+      ::after {
+        content: "This is required";
+        color: var(--yellow);
+        position: absolute;
+        top: 1.8rem;
+        right: 1.2rem;
+        transform: translateY(-50%);
+      }
+    }
+
     input {
       background-color: var(--secondary-black);
       border: 0.2rem solid transparent;
@@ -93,19 +111,25 @@ export const StyledContactSection = styled.div`
       color: var(--main-white);
       padding: 1.2rem;
       font-size: 1.6rem;
-      margin-bottom: 2.4rem;
     }
 
-    textarea {
-      background-color: var(--secondary-black);
-      border: 0.2rem solid transparent;
+    textarea.empty-input {
+      background-color: red;
+    }
+
+    .message-label {
       height: 16.4rem;
-      width: 100%;
-      border-radius: 0.6rem;
-      color: var(--main-white);
-      padding: 1.2rem;
-      font-size: 1.6rem;
-      resize: none;
+      textarea {
+        background-color: var(--secondary-black);
+        border: 0.2rem solid transparent;
+        height: 100%;
+        width: 100%;
+        border-radius: 0.6rem;
+        color: var(--main-white);
+        padding: 1.2rem;
+        font-size: 1.6rem;
+        resize: none;
+      }
     }
   }
 
