@@ -10,6 +10,7 @@ function Hero() {
         <div className="hero-content-left">
           <h2>Milder</h2>
           <h2>Navarro</h2>
+
           <div className="line"></div>
 
           <ul className="social-links">
