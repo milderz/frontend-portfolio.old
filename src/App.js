@@ -9,7 +9,6 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { GlobalStyles } from "./Components/Styles/GlobalStyles";
 import ContactSection from "./Components/ContactSection";
 import Footer from "./Components/Footer";
-import Fade from "react-reveal/Fade";
 
 function App() {
   return (
@@ -26,22 +25,19 @@ function App() {
           title="More about me"
           subtitle="Get to know more about me"
         />
-        <Fade>
-          <div className="about-me-text" id="about">
-            <p>
-              I'm a frontend developer creating modern websites and apps that
-              help businesses to grow and stand out over their competitors.
-            </p>
-            <p>
-              I have an excellent knowledge of technologies like HTML, CSS,
-              Javascript, SASS, Styled Components and React JS.
-            </p>
-            <p>
-              I'm also learning UX/UI basics to complement my coding skills.
-            </p>
-            <MainButton btnText="Download CV" icon={faDownload} />
-          </div>
-        </Fade>
+
+        <div className="about-me-text" id="about">
+          <p>
+            I'm a frontend developer creating modern websites and apps that help
+            businesses to grow and stand out over their competitors.
+          </p>
+          <p>
+            I have an excellent knowledge of technologies like HTML, CSS,
+            Javascript, SASS, Styled Components and React JS.
+          </p>
+          <p>I'm also learning UX/UI basics to complement my coding skills.</p>
+          <MainButton btnText="Download CV" icon={faDownload} />
+        </div>
       </Section>
       <Section>
         <SectionHeader title="Skills" subtitle="My skill set" />

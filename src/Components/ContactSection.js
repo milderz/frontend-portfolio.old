@@ -9,7 +9,6 @@ import {
   faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
-import Fade from "react-reveal/Fade";
 
 function ContactSection() {
   const form = useRef();
@@ -101,59 +100,56 @@ function ContactSection() {
         </div>
       ) : (
         <>
-          <Fade>
-            <div className="contact-section-left" id="contact">
-              <form action="submit" ref={form}>
-                <label className={`${emptyNameInput && "empty-input"}`}>
-                  <input
-                    type="text"
-                    placeholder="Your name"
-                    name="name"
-                    onChange={handleTextChange}
-                  />
-                </label>
-                <label className={`${emptyEmailInput && "empty-input"}`}>
-                  <input
-                    type="email"
-                    placeholder="Your email"
-                    name="email"
-                    onChange={handleTextChange}
-                  />
-                </label>
-                <label
-                  className={`${
-                    emptyMessageInput && "empty-input"
-                  } message-label`}
-                >
-                  <textarea
-                    placeholder="Tell me"
-                    name="message"
-                    onChange={handleTextChange}
-                  />
-                </label>
-                <MainButton
-                  btnText="Send"
-                  icon={faPaperPlane}
-                  handleFormSubmit={handleFormSubmit}
+          <div className="contact-section-left" id="contact">
+            <form action="submit" ref={form}>
+              <label className={`${emptyNameInput && "empty-input"}`}>
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  name="name"
+                  onChange={handleTextChange}
                 />
-              </form>
-            </div>
-          </Fade>
+              </label>
+              <label className={`${emptyEmailInput && "empty-input"}`}>
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  name="email"
+                  onChange={handleTextChange}
+                />
+              </label>
+              <label
+                className={`${
+                  emptyMessageInput && "empty-input"
+                } message-label`}
+              >
+                <textarea
+                  placeholder="Tell me"
+                  name="message"
+                  onChange={handleTextChange}
+                />
+              </label>
+              <MainButton
+                btnText="Send"
+                icon={faPaperPlane}
+                handleFormSubmit={handleFormSubmit}
+              />
+            </form>
+          </div>
         </>
       )}
-      <Fade>
-        <div className="contact-section-right">
-          <p>Let's talk</p>
-          <a
-            href="mailto: mzunax@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            mzunax@gmail.com{" "}
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </a>
-        </div>
-      </Fade>
+
+      <div className="contact-section-right">
+        <p>Let's talk</p>
+        <a
+          href="mailto: mzunax@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          mzunax@gmail.com{" "}
+          <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+        </a>
+      </div>
     </StyledContactSection>
   );
 }
