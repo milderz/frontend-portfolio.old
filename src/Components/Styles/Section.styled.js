@@ -14,6 +14,7 @@ export const StyledSection = styled.section`
   }
 
   .about-me-text {
+    flex: 1;
     padding-bottom: 5.5rem;
     color: var(--main-white);
     font-size: 1.6rem;

@@ -26,6 +26,7 @@ export const StyledHero = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
     h2 {
       font-size: 5rem;
       font-weight: 600;
