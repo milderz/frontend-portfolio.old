@@ -15,7 +15,7 @@ export const StyledSkillsGrid = styled.div`
   @media screen and (max-width: 545px) {
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 10.7rem;
+    grid-auto-rows: 13.7rem;
   }
   .skill-card {
     background-color: var(--main-black);
@@ -25,6 +25,7 @@ export const StyledSkillsGrid = styled.div`
     flex-direction: column;
     border: 0.2rem solid transparent;
     transition: border 0.4s ease;
+    border-radius: 0.8rem;
 
     @media screen and (max-width: 545px) {
       justify-content: space-evenly;
@@ -42,7 +43,8 @@ export const StyledSkillsGrid = styled.div`
       }
       @media screen and (max-width: 426px) {
         padding: 0;
-        font-size: 0.8rem;
+        font-size: 1.1rem;
+        text-align: center;
       }
     }
 
