@@ -1,9 +1,9 @@
 import { StyledSectionHeader } from "./Styles/SectionHeader.styled";
 
-function SectionHeader({ title, subtitle }) {
+function SectionHeader({ title, subtitle, id }) {
   return (
     <StyledSectionHeader>
-      <div className="header-content">
+      <div className="header-content" id={id}>
         <div className="title-container">
           <div className="line"></div>
           <h3>{title}</h3>

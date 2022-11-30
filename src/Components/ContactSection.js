@@ -100,7 +100,7 @@ function ContactSection() {
         </div>
       ) : (
         <>
-          <div className="contact-section-left" id="contact">
+          <div className="contact-section-left">
             <form action="submit" ref={form}>
               <label className={`${emptyNameInput && "empty-input"}`}>
                 <input

@@ -7,7 +7,7 @@ import Tag from "./Tag";
 
 function ProjectsGrid() {
   return (
-    <StyledProjectsGrid id="projects">
+    <StyledProjectsGrid>
       <ProjectCard
         tags={
           <>

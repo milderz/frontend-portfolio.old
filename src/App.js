@@ -17,16 +17,21 @@ function App() {
       <Header />
       <Hero />
       <Section>
-        <SectionHeader title="Projects" subtitle="Some projects I have built" />
+        <SectionHeader
+          title="Projects"
+          subtitle="Some projects I have built"
+          id="projects"
+        />
         <ProjectsGrid />
       </Section>
       <Section version="primary">
         <SectionHeader
           title="More about me"
           subtitle="Get to know more about me"
+          id="about"
         />
 
-        <div className="about-me-text" id="about">
+        <div className="about-me-text">
           <p>
             I'm a frontend developer creating modern websites and apps that help
             businesses to grow and stand out over their competitors.
@@ -44,7 +49,11 @@ function App() {
         <SkillsGrid />
       </Section>
       <Section version="primary">
-        <SectionHeader title="Contact" subtitle="Tell me about your project" />
+        <SectionHeader
+          title="Contact"
+          subtitle="Tell me about your project"
+          id="contact"
+        />
         <ContactSection />
       </Section>
       <Footer />
