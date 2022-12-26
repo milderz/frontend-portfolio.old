@@ -14,7 +14,7 @@ function Header() {
     <StyledHeader>
       <div className="header-content">
         <StyledLogo>
-          <img src="/logo.svg" alt="main-portfolio-logo" srcset="" />
+          <img src="/logo.svg" alt="main-portfolio-logo" srcSet="" />
         </StyledLogo>
         <NavLinks mobileBtnActive={mobileBtnActive} />
         <MobileMenu

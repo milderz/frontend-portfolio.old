@@ -1,0 +1,72 @@
+[
+ {
+  "id": 1,
+  "projectName": "PhotoSnap,",
+  "shortDescription": "A marketing site for a photo-sharing app, created using React JS and Styled Components.",
+  "longDescription": "A marketing site for a photo-sharing app, created using React JS and Styled Components.",
+  "mainImage": "/photo-snap.webp",
+  "slug": "photosnap",
+  "labels": [
+   {
+    "color": "#61dbfb",
+    "text": "React",
+    "icon": "faReact"
+   },
+   {
+    "color": "#db7093",
+    "text": "STYLED COMPONENTS",
+    "icon": "faReact"
+   }
+  ],
+  "webLink":"https://photo-snap-site.netlify.app/",
+  "githubLink": "https://github.com/milderz/Photosnap"
+
+ },
+ {
+  "id": 2,
+  "projectName": "Notes App",
+  "shortDescription": "A note taking web app developed with React, Firebase and StyledComponents",
+  "longDescription": "A note taking web app developed with React, Firebase and StyledComponents",
+  "mainImage": "/notes.png",
+  "slug": "notes-app",
+  "labels": [
+   {
+    "color": "#61dbfb",
+    "text": "React",
+    "icon": "faReact"
+   },
+   {
+    "color": "#db7093",
+    "text": "STYLED COMPONENTS",
+    "icon": "faReact"
+   }
+  ],
+  "webLink":"https://thenotesappproject.netlify.app/",
+  "githubLink": "https://github.com/milderz/notes-crud-app"
+
+ },
+ {
+  "id": 3,
+  "projectName": "Designo Studio",
+  "shortDescription": "A portfolio website for a design agency, developed using React and Styled Components",
+  "longDescription": "A portfolio website for a design agency, developed using React and Styled Components",
+  "mainImage": "/designo.jpg",
+  "slug": "designo-studio",
+  "labels": [
+   {
+    "color": "#61dbfb",
+    "text": "React",
+    "icon": "faReact"
+   },
+   {
+    "color": "#ffcc01",
+    "text": "Firebase",
+    "icon": "faReact"
+   }
+  ],
+  "webLink":"https://thenotesappproject.netlify.app/",
+  "githubLink": "https://github.com/milderz/notes-crud-app"
+
+ }
+ 
+]

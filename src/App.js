@@ -9,54 +9,79 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { GlobalStyles } from "./Components/Styles/GlobalStyles";
 import ContactSection from "./Components/ContactSection";
 import Footer from "./Components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProjectDetail from "./Components/ProjectDetail";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <Header />
-      <Hero />
-      <Section>
-        <SectionHeader
-          title="Projects"
-          subtitle="Some projects I have built"
-          id="projects"
-        />
-        <ProjectsGrid />
-      </Section>
-      <Section version="primary">
-        <SectionHeader
-          title="More about me"
-          subtitle="Get to know more about me"
-          id="about"
-        />
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Hero />
+                <Section>
+                  <SectionHeader
+                    title="Projects"
+                    subtitle="Some projects I have built"
+                    id="projects"
+                  />
+                  <ProjectsGrid />
+                </Section>
+                <Section version="primary">
+                  <SectionHeader
+                    title="More about me"
+                    subtitle="Get to know more about me"
+                    id="about"
+                  />
 
-        <div className="about-me-text">
-          <p>
-            I'm a frontend developer creating modern websites and apps that help
-            businesses to grow and stand out over their competitors.
-          </p>
-          <p>
-            I have an excellent knowledge of technologies like HTML, CSS,
-            Javascript, SASS, Styled Components and React JS.
-          </p>
-          <p>I'm also learning UX/UI basics to complement my coding skills.</p>
-          <MainButton btnText="Download CV" icon={faDownload} />
-        </div>
-      </Section>
-      <Section>
-        <SectionHeader title="Skills" subtitle="My skill set" />
-        <SkillsGrid />
-      </Section>
-      <Section version="primary">
-        <SectionHeader
-          title="Contact"
-          subtitle="Tell me about your project"
-          id="contact"
-        />
-        <ContactSection />
-      </Section>
-      <Footer />
+                  <div className="about-me-text">
+                    <p>
+                      I'm a frontend developer creating modern websites and apps
+                      that help businesses to grow and stand out over their
+                      competitors.
+                    </p>
+                    <p>
+                      I have an excellent knowledge of technologies like HTML,
+                      CSS, Javascript, SASS, Styled Components and React JS.
+                    </p>
+                    <p>
+                      I'm also learning UX/UI basics to complement my coding
+                      skills.
+                    </p>
+                    <MainButton btnText="Download CV" icon={faDownload} />
+                  </div>
+                </Section>
+                <Section>
+                  <SectionHeader title="Skills" subtitle="My skill set" />
+                  <SkillsGrid />
+                </Section>
+                <Section version="primary">
+                  <SectionHeader
+                    title="Contact"
+                    subtitle="Tell me about your project"
+                    id="contact"
+                  />
+                  <ContactSection />
+                </Section>
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path=":name"
+            element={
+              <>
+                <ProjectDetail />
+              </>
+            }
+          />
+        </Routes>
+      </Router>
     </>
   );
 }

@@ -1,35 +1,31 @@
 import { StyledProjectCard } from "./Styles/ProjectCard.styled";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
-import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+import Tag from "./Tag";
 
 function ProjectCard({
-  tags,
   projectName,
-  projectDescription,
-  githubLink,
-  webLink,
-  bgImg,
+  shortDescription,
+  mainImage,
+  labels,
+  slug,
 }) {
   return (
-    <StyledProjectCard bgImg={bgImg}>
-      <div className="thumbnail"></div>
-      <div className="card-info">
-        <header>
-          <h4 className="card-title">{projectName}</h4>
-          <div className="projects-links">
-            <a href={githubLink} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faSquareGithub} />
-            </a>
-            <a href={webLink} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faSquareArrowUpRight} />
-            </a>
+    <Link to={slug}>
+      <StyledProjectCard bgImg={mainImage}>
+        <div className="thumbnail"></div>
+        <div className="card-info">
+          <header>
+            <h4 className="card-title">{projectName}</h4>
+          </header>
+          <p className="project-description">{shortDescription}</p>
+          <div className="card-tags">
+            {labels.map((label, index) => (
+              <Tag tagColor={label.color} tagName={label.text} key={index} />
+            ))}
           </div>
-        </header>
-        <p className="project-description">{projectDescription}</p>
-        <div className="card-tags">{tags}</div>
-      </div>
-    </StyledProjectCard>
+        </div>
+      </StyledProjectCard>
+    </Link>
   );
 }
 

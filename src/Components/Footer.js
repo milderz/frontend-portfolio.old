@@ -7,7 +7,7 @@ function Footer() {
     <StyledFooter>
       <div className="footer-content">
         <div className="footer-logo">
-          <img src="/logo-black.svg" alt="" srcset="" />
+          <img src="/logo-black.svg" alt="" srcSet="" />
         </div>
         <ul>
           <li>

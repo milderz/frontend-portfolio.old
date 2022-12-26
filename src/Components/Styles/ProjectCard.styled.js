@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledProjectCard = styled.div`
+export const StyledProjectCard = styled.a`
   display: flex;
   flex-direction: column;
   border-radius: 1.6rem;
@@ -40,65 +40,6 @@ export const StyledProjectCard = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-
-    header {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      a {
-        position: relative;
-        margin-left: 2rem;
-        svg {
-          height: 2.4rem;
-
-          color: var(--main-white);
-          transition: color 0.2s;
-        }
-
-        :hover {
-          svg {
-            color: var(--yellow);
-          }
-        }
-      }
-
-      a {
-        ::after {
-          content: "";
-          position: absolute;
-          top: -4.8rem;
-          left: 78%;
-          transform: translateX(-50%);
-          color: var(--main-white);
-          background-color: #000;
-          padding: 0.2rem 0.6rem;
-          border-radius: 0.4rem;
-          width: max-content;
-          font-size: 1.4rem;
-          font-weight: 600;
-          opacity: 0;
-          transition: opacity 0.2s ease;
-          pointer-events: none;
-        }
-
-        :hover::after {
-          opacity: 1;
-        }
-      }
-
-      a:nth-child(1) {
-        ::after {
-          content: "View code";
-        }
-      }
-      a:nth-child(2) {
-        ::after {
-          content: "View site";
-        }
-      }
-    }
 
     h4 {
       font-size: 1.6rem;
