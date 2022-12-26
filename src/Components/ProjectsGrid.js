@@ -12,17 +12,15 @@ function ProjectsGrid() {
   }, []);
   return (
     <StyledProjectsGrid>
-      {projects.map((project) => (
-        <>
-          <ProjectCard
-            key={project.id}
-            projectName={project.projectName}
-            shortDescription={project.shortDescription}
-            mainImage={project.mainImage}
-            labels={project.labels}
-            slug={project.slug}
-          />
-        </>
+      {projects.map((project, index) => (
+        <ProjectCard
+          key={index}
+          projectName={project.projectName}
+          shortDescription={project.shortDescription}
+          mainImage={project.mainImage}
+          labels={project.labels}
+          slug={project.slug}
+        />
       ))}
     </StyledProjectsGrid>
   );

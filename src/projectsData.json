@@ -1,7 +1,7 @@
 [
  {
   "id": 1,
-  "projectName": "PhotoSnap,",
+  "projectName": "PhotoSnap",
   "shortDescription": "A marketing site for a photo-sharing app, created using React JS and Styled Components.",
   "longDescription": "A marketing site for a photo-sharing app, created using React JS and Styled Components.",
   "mainImage": "/photo-snap.webp",

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledProjectCard = styled.a`
+export const StyledProjectCard = styled.article`
   display: flex;
   flex-direction: column;
   border-radius: 1.6rem;
