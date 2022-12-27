@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const StyledMainButton = styled.button`
+export const StyledMainButton = styled.a`
+  display: inline-block;
   margin: 1.6rem 0;
   cursor: pointer;
   background-color: var(--yellow);

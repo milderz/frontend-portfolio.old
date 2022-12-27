@@ -3,7 +3,7 @@
   "id": 1,
   "projectName": "PhotoSnap",
   "shortDescription": "A marketing site for a photo-sharing app, created using React JS and Styled Components.",
-  "longDescription": "A marketing site for a photo-sharing app, created using React JS and Styled Components.",
+  "longDescription": "For our design agency's portfolio website, we wanted to create a visually stunning and highly functional platform to showcase our work. To achieve this, we turned to React and Styled Components. \n\n Using React, we were able to build a dynamic and responsive user interface that presents our portfolio in a clean and intuitive way. We utilized React's modular design to create reusable components, making it easy to maintain and update the site as needed. \n\n Styled Components allowed us to easily apply custom styles to our React components, giving us complete control over the look and feel of the site. By using this library, we were able to create a cohesive and consistent design that truly reflects our agency's branding. \n\n Overall, the combination of React and Styled Components allowed us to build a top-quality portfolio website that effectively showcases our design work and capabilities.",
   "mainImage": "/photo-snap.webp",
   "slug": "photosnap",
   "labels": [
@@ -26,7 +26,7 @@
   "id": 2,
   "projectName": "Notes App",
   "shortDescription": "A note taking web app developed with React, Firebase and StyledComponents",
-  "longDescription": "A note taking web app developed with React, Firebase and StyledComponents",
+  "longDescription": "The note taking app is a simple, yet powerful tool for organizing and storing your notes in one place. With a clean and intuitive interface, it's easy to create, edit, and delete notes as needed.\n\nOne of the key features of the app is its integration with Firebase, a powerful backend service that enables real-time data synchronization and authentication. This means that your notes are always up-to-date, no matter where you access them from.\n\nI also utilized StyledComponents to create a visually appealing and modern design for the app. With its ability to easily style and customize React components, StyledComponents allowed me to create a cohesive and visually appealing user experience.",
   "mainImage": "/notes.png",
   "slug": "notes-app",
   "labels": [
@@ -36,8 +36,8 @@
     "icon": "faReact"
    },
    {
-    "color": "#db7093",
-    "text": "STYLED COMPONENTS",
+    "color": "#ffcc01",
+    "text": "Firebase",
     "icon": "faReact"
    }
   ],
@@ -49,7 +49,7 @@
   "id": 3,
   "projectName": "Designo Studio",
   "shortDescription": "A portfolio website for a design agency, developed using React and Styled Components",
-  "longDescription": "A portfolio website for a design agency, developed using React and Styled Components",
+  "longDescription": "The website is a showcase of the design agency's work, highlighting their capabilities and expertise in various areas such as branding, web design, and print design. It features an eye-catching and modern design that showcases their unique style and creative vision.\n\nI utilized React to build a dynamic and responsive website that seamlessly adapts to different screen sizes and devices. This allows the website to provide a seamless user experience regardless of the user's device or screen size.\n\nStyled Components played a key role in the development of the website, allowing me to easily style and customize React components to create a cohesive and visually appealing design. The result is a visually stunning portfolio website that effectively communicates the design agency's capabilities and style.",
   "mainImage": "/designo.jpg",
   "slug": "designo-studio",
   "labels": [
@@ -59,8 +59,8 @@
     "icon": "faReact"
    },
    {
-    "color": "#ffcc01",
-    "text": "Firebase",
+    "color": "#db7093",
+    "text": "STYLED COMPONENTS",
     "icon": "faReact"
    }
   ],

@@ -17,5 +17,6 @@ export const StyledTag = styled.div`
     font-size: 1rem !important;
     font-weight: 800;
     padding: 0 1rem;
+    color: var(--main-black);
   }
 `;
