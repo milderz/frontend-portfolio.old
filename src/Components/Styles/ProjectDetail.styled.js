@@ -9,7 +9,7 @@ export const StyledProjectDetail = styled.section`
     margin: 5.5rem auto;
     display: flex;
     align-items: center;
-    gap: 3.8rem;
+    gap: 6.8rem;
     max-width: 111rem;
 
     @media screen and (max-width: 1280px) {

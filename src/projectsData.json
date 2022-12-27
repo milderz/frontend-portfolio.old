@@ -69,6 +69,52 @@
   "webLink":"https://thenotesappproject.netlify.app/",
   "githubLink": "https://github.com/milderz/notes-crud-app"
 
+ },
+ {
+  "id": 4,
+  "projectName": "Audiophile",
+  "shortDescription": "A portfolio website for a design agency, developed using React and Styled Components",
+  "longDescription": "The website is a showcase of the design agency's work, highlighting their capabilities and expertise in various areas such as branding, web design, and print design. It features an eye-catching and modern design that showcases their unique style and creative vision.\n\nI utilized React to build a dynamic and responsive website that seamlessly adapts to different screen sizes and devices. This allows the website to provide a seamless user experience regardless of the user's device or screen size.\n\nStyled Components played a key role in the development of the website, allowing me to easily style and customize React components to create a cohesive and visually appealing design. The result is a visually stunning portfolio website that effectively communicates the design agency's capabilities and style.",
+  "mainImage": "/audiophile.webp",
+  "slug": "audiophile",
+  "labels": [
+   {
+    "color": "#61dbfb",
+    "text": "React",
+    "icon": "faReact"
+   },
+   {
+    "color": "#db7093",
+    "text": "STYLED COMPONENTS",
+    "icon": "faReact"
+   }
+  ],
+  "webLink":"https://thenotesappproject.netlify.app/",
+  "githubLink": "https://github.com/milderz/notes-crud-app"
+
+ },
+ {
+  "id": 5,
+  "projectName": "Octocade",
+  "shortDescription": "A portfolio website for a design agency, developed using React and Styled Components",
+  "longDescription": "The website is a showcase of the design agency's work, highlighting their capabilities and expertise in various areas such as branding, web design, and print design. It features an eye-catching and modern design that showcases their unique style and creative vision.\n\nI utilized React to build a dynamic and responsive website that seamlessly adapts to different screen sizes and devices. This allows the website to provide a seamless user experience regardless of the user's device or screen size.\n\nStyled Components played a key role in the development of the website, allowing me to easily style and customize React components to create a cohesive and visually appealing design. The result is a visually stunning portfolio website that effectively communicates the design agency's capabilities and style.",
+  "mainImage": "/octocade.png",
+  "slug": "octocade",
+  "labels": [
+   {
+    "color": "#61dbfb",
+    "text": "React",
+    "icon": "faReact"
+   },
+   {
+    "color": "#db7093",
+    "text": "STYLED COMPONENTS",
+    "icon": "faReact"
+   }
+  ],
+  "webLink":"https://thenotesappproject.netlify.app/",
+  "githubLink": "https://github.com/milderz/notes-crud-app"
+
  }
  
 ]

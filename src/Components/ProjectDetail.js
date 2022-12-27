@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import projectsData from "../projectsData.json";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { StyledProjectDetail } from "./Styles/ProjectDetail.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +11,6 @@ import MainButton from "./MainButton";
 const ProjectDetail = () => {
   const [projects, setProjects] = useState([]);
   let { name } = useParams();
-  let navigate = useNavigate();
 
   useEffect(() => {
     setProjects(projectsData.filter((project) => project.slug === name));
@@ -23,10 +22,10 @@ const ProjectDetail = () => {
         <StyledProjectDetail>
           <div className="content">
             <div className="text-content">
-              <button className="previous-button" onClick={() => navigate(-1)}>
+              <Link to="/" className="previous-button">
                 <FontAwesomeIcon icon={faArrowLeft} />
                 BACK
-              </button>
+              </Link>
               <h3>{project.projectName}</h3>
               <p>{project.longDescription}</p>
               <div className="tags">

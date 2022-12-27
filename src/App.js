@@ -11,12 +11,14 @@ import ContactSection from "./Components/ContactSection";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectDetail from "./Components/ProjectDetail";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
-    <>
-      <GlobalStyles />
-      <Router>
+    <Router>
+      <ScrollToTop />
+      <div className="App">
+        <GlobalStyles />
         <Routes>
           <Route
             path="/"
@@ -68,7 +70,6 @@ function App() {
                   />
                   <ContactSection />
                 </Section>
-                <Footer />
               </>
             }
           />
@@ -77,13 +78,13 @@ function App() {
             element={
               <>
                 <ProjectDetail />
-                <Footer />
               </>
             }
           />
         </Routes>
-      </Router>
-    </>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
