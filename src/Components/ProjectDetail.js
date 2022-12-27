@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft, faEye } from "@fortawesome/free-solid-svg-icons";
 import Tag from "./Tag";
-import MainButton from "./MainButton";
 
 const ProjectDetail = () => {
   const [projects, setProjects] = useState([]);
@@ -18,34 +17,53 @@ const ProjectDetail = () => {
 
   return (
     <>
-      {projects.map((project) => (
-        <StyledProjectDetail>
+      {projects.map((project, index) => (
+        <StyledProjectDetail key={index}>
           <div className="content">
-            <div className="text-content">
-              <Link to="/" className="previous-button">
-                <FontAwesomeIcon icon={faArrowLeft} />
-                BACK
-              </Link>
+            <Link to="/" className="previous-button">
+              <FontAwesomeIcon icon={faArrowLeft} />
+              BACK
+            </Link>
+            <header>
               <h3>{project.projectName}</h3>
-              <p>{project.longDescription}</p>
-              <div className="tags">
-                {project.labels.map((label) => (
-                  <Tag tagName={label.text} tagColor={label.color} />
-                ))}
-              </div>
               <div className="buttons">
-                <MainButton btnText="Preview website" icon={faEye} />
-                <MainButton btnText="Code " icon={faGithub} />
+                <a
+                  href={project.webLink}
+                  target="_blank"
+                  className="header-link"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faEye} />
+                  Preview website
+                </a>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  className="header-link"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                  Code
+                </a>
               </div>
-            </div>
+            </header>
+
             <div
               className="img-content"
               style={{
-                background: `url(${project.mainImage})`,
-                backgroundPosition: "center",
+                backgroundPosition: "top",
                 backgroundSize: "cover",
+                background:
+                  "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8))," +
+                  `url(${project.mainImage})`,
               }}
             ></div>
+            <p className="project-description">{project.longDescription}</p>
+            <div className="tags">
+              {project.labels.map((label, index) => (
+                <Tag key={index} tagName={label.text} tagColor={label.color} />
+              ))}
+            </div>
           </div>
         </StyledProjectDetail>
       ))}
