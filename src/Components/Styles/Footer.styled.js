@@ -11,6 +11,7 @@ export const StyledFooter = styled.section`
     height: 100%;
     width: 77%;
     margin: auto;
+    max-width: 111rem;
 
     @media screen and (max-width: 1280px) {
       width: 90%;

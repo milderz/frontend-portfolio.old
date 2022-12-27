@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   background-color: ${({ version }) =>
-    version === "primary" ? "#1c1c1c" : "#242424"};
+    version === "primary" ? "var(--main-black)" : "#242424"};
 
   .section-content {
     width: 77%;
     margin: auto;
+    max-width: 111rem;
 
     @media screen and (max-width: 1280px) {
       width: 90%;

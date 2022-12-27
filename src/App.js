@@ -77,6 +77,7 @@ function App() {
             element={
               <>
                 <ProjectDetail />
+                <Footer />
               </>
             }
           />

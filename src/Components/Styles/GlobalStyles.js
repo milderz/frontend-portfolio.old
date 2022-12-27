@@ -38,6 +38,7 @@ body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background-color: var(--main-black);
 }
 
 
@@ -61,6 +62,8 @@ a {
 }
 
 :root {
+  
+
   --main-black: #1C1C1C;
   --secondary-black: #242424;
   --main-white: #ededed;

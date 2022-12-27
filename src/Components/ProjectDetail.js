@@ -22,7 +22,7 @@ const ProjectDetail = () => {
       {projects.map((project) => (
         <StyledProjectDetail>
           <div className="content">
-            <div className="text content">
+            <div className="text-content">
               <button className="previous-button" onClick={() => navigate(-1)}>
                 <FontAwesomeIcon icon={faArrowLeft} />
                 BACK
@@ -34,9 +34,19 @@ const ProjectDetail = () => {
                   <Tag tagName={label.text} tagColor={label.color} />
                 ))}
               </div>
-              <MainButton btnText="Preview website" icon={faEye} />
-              <MainButton btnText="Code " icon={faGithub} />
+              <div className="buttons">
+                <MainButton btnText="Preview website" icon={faEye} />
+                <MainButton btnText="Code " icon={faGithub} />
+              </div>
             </div>
+            <div
+              className="img-content"
+              style={{
+                background: `url(${project.mainImage})`,
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
           </div>
         </StyledProjectDetail>
       ))}

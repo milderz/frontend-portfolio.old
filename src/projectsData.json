@@ -5,6 +5,8 @@
   "shortDescription": "A marketing site for a photo-sharing app, created using React JS and Styled Components.",
   "longDescription": "For our design agency's portfolio website, we wanted to create a visually stunning and highly functional platform to showcase our work. To achieve this, we turned to React and Styled Components. \n\n Using React, we were able to build a dynamic and responsive user interface that presents our portfolio in a clean and intuitive way. We utilized React's modular design to create reusable components, making it easy to maintain and update the site as needed. \n\n Styled Components allowed us to easily apply custom styles to our React components, giving us complete control over the look and feel of the site. By using this library, we were able to create a cohesive and consistent design that truly reflects our agency's branding. \n\n Overall, the combination of React and Styled Components allowed us to build a top-quality portfolio website that effectively showcases our design work and capabilities.",
   "mainImage": "/photo-snap.webp",
+  "secondImage": "/photo-snap.webp",
+  "thirdImage": "/photo-snap.webp",
   "slug": "photosnap",
   "labels": [
    {
