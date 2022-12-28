@@ -80,11 +80,16 @@ export const StyledProjectDetail = styled.section`
 
     svg {
       padding-right: 1.6rem;
+      color: var(--yellow);
     }
 
     :hover {
       color: var(--main-black);
       background-color: var(--yellow);
+
+      svg {
+        color: var(--main-black);
+      }
     }
   }
 

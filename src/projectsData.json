@@ -73,7 +73,7 @@
  {
   "id": 4,
   "projectName": "Audiophile",
-  "shortDescription": "A portfolio website for a design agency, developed using React and Styled Components",
+  "shortDescription": "Audiophile is ecommerce website for a top-brand that sells headphones, earphones, and speakers.",
   "longDescription": "The website is a showcase of the design agency's work, highlighting their capabilities and expertise in various areas such as branding, web design, and print design. It features an eye-catching and modern design that showcases their unique style and creative vision.\n\nI utilized React to build a dynamic and responsive website that seamlessly adapts to different screen sizes and devices. This allows the website to provide a seamless user experience regardless of the user's device or screen size.\n\nStyled Components played a key role in the development of the website, allowing me to easily style and customize React components to create a cohesive and visually appealing design. The result is a visually stunning portfolio website that effectively communicates the design agency's capabilities and style.",
   "mainImage": "/audiophile.webp",
   "slug": "audiophile",
@@ -96,7 +96,7 @@
  {
   "id": 5,
   "projectName": "Octocade",
-  "shortDescription": "A portfolio website for a design agency, developed using React and Styled Components",
+  "shortDescription": "Gaming blog featuring latest news, reviews, and updates.",
   "longDescription": "The gaming website is a hub for all things gaming, featuring the latest news, reviews, and updates on the hottest games. With a clean and intuitive interface, it's easy for users to navigate and find what they're looking for.\n\nI utilized React to build a dynamic and responsive website that seamlessly adapts to different screen sizes and devices. This allows the website to provide a seamless user experience regardless of the user's device or screen size.\n\nStyled Components played a key role in the development of the website, allowing me to easily style and customize React components to create a cohesive and visually appealing design. The result is a visually stunning website that engages and immerses users in the world of gaming.",
   "mainImage": "/octocade.png",
   "slug": "octocade",

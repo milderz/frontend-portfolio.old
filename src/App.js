@@ -12,6 +12,7 @@ import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectDetail from "./Components/ProjectDetail";
 import ScrollToTop from "./Components/ScrollToTop";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   return (
@@ -42,20 +43,22 @@ function App() {
                   />
 
                   <div className="about-me-text">
-                    <p>
-                      I'm a frontend developer creating modern websites and apps
-                      that help businesses to grow and stand out over their
-                      competitors.
-                    </p>
-                    <p>
-                      I have an excellent knowledge of technologies like HTML,
-                      CSS, Javascript, SASS, Styled Components and React JS.
-                    </p>
-                    <p>
-                      I'm also learning UX/UI basics to complement my coding
-                      skills.
-                    </p>
-                    <MainButton btnText="Download CV" icon={faDownload} />
+                    <Fade cascade>
+                      <p>
+                        I'm a frontend developer creating modern websites and
+                        apps that help businesses to grow and stand out over
+                        their competitors.
+                      </p>
+                      <p>
+                        I have an excellent knowledge of technologies like HTML,
+                        CSS, Javascript, SASS, Styled Components and React JS.
+                      </p>
+                      <p>
+                        I'm also learning UX/UI basics to complement my coding
+                        skills.
+                      </p>
+                      <MainButton btnText="Download CV" icon={faDownload} />
+                    </Fade>
                   </div>
                 </Section>
                 <Section>
