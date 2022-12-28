@@ -1,5 +1,5 @@
 import { StyledSectionHeader } from "./Styles/SectionHeader.styled";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 function SectionHeader({ title, subtitle, id }) {
   return (
@@ -8,10 +8,10 @@ function SectionHeader({ title, subtitle, id }) {
         <Fade>
           <div className="title-container">
             <div className="line"></div>
-            <h3>{title}</h3>
+            <h5>{title}</h5>
           </div>
 
-          <h4>{subtitle}</h4>
+          <h3>{subtitle}</h3>
         </Fade>
       </div>
     </StyledSectionHeader>

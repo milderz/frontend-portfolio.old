@@ -144,13 +144,13 @@ function ContactSection() {
 
       <div className="contact-section-right">
         <Fade>
-          <p>Let's talk</p>
+          <h3>Let's talk</h3>
           <a
             href="mailto: mzunax@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            mzunax@gmail.com{" "}
+            mzunax@gmail.com
             <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
           </a>
         </Fade>

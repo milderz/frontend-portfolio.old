@@ -25,8 +25,6 @@ export const StyledContactSection = styled.div`
 
     p {
       padding: 2.8rem 0;
-      font-size: 1.8rem;
-      color: var(--main-white);
     }
 
     @media screen and (max-width: 700px) {
@@ -59,20 +57,16 @@ export const StyledContactSection = styled.div`
       flex-direction: column;
     }
 
-    p {
-      font-size: 2.8rem;
-      color: var(--main-white);
+    h3 {
       @media screen and (max-width: 700px) {
         font-size: 1.8rem;
       }
     }
 
     a {
-      font-size: 1.6rem;
-      color: var(--main-white);
-
       svg {
         color: var(--yellow);
+        padding-left: 1.6rem;
       }
 
       :hover {

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledMainButton = styled.a`
-  display: inline-block;
   margin: 1.6rem 0;
   cursor: pointer;
   background-color: var(--yellow);
@@ -12,6 +11,7 @@ export const StyledMainButton = styled.a`
   font-weight: 600;
   color: var(--main-black);
   transition: all 0.4s ease;
+  text-align: center;
 
   svg {
     margin-right: 1.6rem;

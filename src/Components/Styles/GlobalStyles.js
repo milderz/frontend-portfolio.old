@@ -59,6 +59,8 @@ li {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--main-white);
 }
 
 :root {
@@ -66,9 +68,39 @@ a {
 
   --main-black: #1C1C1C;
   --secondary-black: #242424;
-  --main-white: #ededed;
+  --main-white: #c8c8c8;
   --gray: #ededed4f;
   --yellow: #F4B301;
  
 }
+
+h2 {
+  font-size: 5rem;
+      font-weight: 600;
+      color: var(--main-white);
+}
+
+
+
+h3 {
+  font-size: 2.4rem;
+  color: var(--main-white);
+  font-weight: 500;
+}
+
+h4 {
+  
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+p {
+  color: var(--main-white);
+  font-size: 1.6rem;
+}
+
+
 `;

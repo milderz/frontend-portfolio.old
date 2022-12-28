@@ -62,7 +62,10 @@ function App() {
                   </div>
                 </Section>
                 <Section>
-                  <SectionHeader title="Skills" subtitle="My skill set" />
+                  <SectionHeader
+                    title="Skills"
+                    subtitle="Technologies that I like"
+                  />
                   <SkillsGrid />
                 </Section>
                 <Section version="primary">

@@ -66,41 +66,7 @@ export const StyledProjectDetail = styled.section`
     gap: 3.8rem;
   }
 
-  .header-link {
-    color: var(--main-white);
-    font-size: 1.6rem;
-    height: 3.1rem;
-    background-color: var(--secondary-black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.6rem;
-    border-radius: 0.6rem;
-    transition: all 0.2s ease;
-
-    svg {
-      padding-right: 1.6rem;
-      color: var(--yellow);
-    }
-
-    :hover {
-      color: var(--main-black);
-      background-color: var(--yellow);
-
-      svg {
-        color: var(--main-black);
-      }
-    }
-  }
-
-  h3 {
-    font-size: 2.8rem;
-    color: var(--main-white);
-  }
-
   p {
-    color: var(--main-white);
-    font-size: 1.6rem;
     white-space: pre-line;
   }
 
@@ -109,9 +75,7 @@ export const StyledProjectDetail = styled.section`
   }
 
   .buttons {
-    /* width: 100%; */
     display: flex;
-    /* justify-content: space-between; */
     gap: 1.9rem;
   }
 `;

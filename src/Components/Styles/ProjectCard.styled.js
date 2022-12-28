@@ -33,7 +33,6 @@ export const StyledProjectCard = styled.article`
     flex: 20rem;
     background-color: var(--main-black);
     padding: 3rem 1.8rem 1.8rem 1.8rem;
-    color: var(--main-white);
     border-bottom-left-radius: 1.6rem;
     border-bottom-right-radius: 1.6rem;
     display: flex;
@@ -42,16 +41,13 @@ export const StyledProjectCard = styled.article`
     justify-content: space-between;
 
     h4 {
-      font-size: 1.6rem;
-      font-weight: 600;
       transition: color 0.4s ease;
     }
 
     .project-description {
-      font-size: 1.3rem;
-      line-height: 1.5;
       padding-top: 1.8rem;
       flex-grow: 1;
+      font-size: 1.4rem;
     }
   }
 

@@ -17,14 +17,10 @@ export const StyledSection = styled.section`
   .about-me-text {
     flex: 1;
     padding-bottom: 5.5rem;
-    color: var(--main-white);
-    font-size: 1.6rem;
 
     p {
       padding: 1.6rem 0;
-      line-height: 1.5;
       width: 68ch;
-      font-size: 1.6rem;
 
       @media screen and (max-width: 780px) {
         width: auto;

@@ -6,9 +6,7 @@ export const StyledSectionHeader = styled.header`
     width: 100%;
     margin: auto;
 
-    h4 {
-      font-size: 2.4rem;
-      font-weight: 400;
+    h3 {
       padding-bottom: 5.2rem;
       @media screen and (max-width: 700px) {
         font-size: 1.8rem;
@@ -27,10 +25,9 @@ export const StyledSectionHeader = styled.header`
       width: 7rem;
       background-color: var(--yellow);
     }
-    h3 {
+    h5 {
       font-size: 1.6rem;
       padding-left: 1.8rem;
-      font-weight: 400;
     }
   }
 `;

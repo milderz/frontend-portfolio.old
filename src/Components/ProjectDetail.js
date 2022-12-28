@@ -7,6 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft, faEye } from "@fortawesome/free-solid-svg-icons";
 import Tag from "./Tag";
 import { Fade } from "react-awesome-reveal";
+import SecondaryButton from "./SecondaryButton";
 
 const ProjectDetail = () => {
   const [projects, setProjects] = useState([]);
@@ -31,24 +32,16 @@ const ProjectDetail = () => {
               <Fade>
                 <h3>{project.projectName}</h3>
                 <div className="buttons">
-                  <a
-                    href={project.webLink}
-                    target="_blank"
-                    className="header-link"
-                    rel="noreferrer"
-                  >
-                    <FontAwesomeIcon icon={faEye} />
-                    Preview website
-                  </a>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    className="header-link"
-                    rel="noreferrer"
-                  >
-                    <FontAwesomeIcon icon={faGithub} />
-                    Code
-                  </a>
+                  <SecondaryButton
+                    text="Preview website"
+                    icon={faEye}
+                    path={project.webLink}
+                  />
+                  <SecondaryButton
+                    text="Github code"
+                    icon={faGithub}
+                    path={project.githubLink}
+                  />
                 </div>
               </Fade>
             </header>

@@ -1,6 +1,7 @@
 import { StyledFooter } from "./Styles/Footer.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -29,7 +30,16 @@ function Footer() {
             </a>
           </li>
         </ul>
-        <p className="copy">© Milder Navarro</p>
+        <div className="contact">
+          <a
+            href="mailto: mzunax@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            mzunax@gmail.com
+          </a>
+          <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+        </div>
       </div>
     </StyledFooter>
   );

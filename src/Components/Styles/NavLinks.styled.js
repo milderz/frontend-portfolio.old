@@ -1,21 +1,18 @@
 import styled from "styled-components";
 
 export const StyledNavLinks = styled.nav`
+  z-index: 2;
   height: 100%;
   flex: 1;
   ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     height: 100%;
     li {
       height: 100%;
 
       a {
-        font-size: 1.6rem;
-        color: var(--main-white);
-
         height: 100%;
         display: flex;
         align-items: center;
@@ -45,7 +42,6 @@ export const StyledNavLinks = styled.nav`
       position: absolute;
       top: 6.5rem;
       height: 25rem;
-
       left: 50%;
       width: 100%;
       background-color: var(--yellow);
@@ -62,9 +58,6 @@ export const StyledNavLinks = styled.nav`
       transition: all 0.4s ease;
 
       li {
-        height: auto;
-        /* padding: 1.2rem 0; */
-
         a {
           color: var(--main-black);
           font-weight: 600;

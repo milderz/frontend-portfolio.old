@@ -43,7 +43,7 @@ function Hero() {
               <p>About</p>
             </div>
             <div className="about-text">
-              <h4>Frontend Developer </h4>
+              <h3>Frontend Developer </h3>
               <p>Developing modern websites that help businesses to grow!</p>
             </div>
             <a className="more-about" href="#about">

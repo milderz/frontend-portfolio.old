@@ -32,9 +32,6 @@ export const StyledSkillsGrid = styled.div`
     }
 
     p {
-      color: var(--main-white);
-      font-size: 1.6rem;
-      font-weight: 600;
       padding: 1.6rem 0;
       transition: color 0.4s ease;
       @media screen and (max-width: 545px) {
