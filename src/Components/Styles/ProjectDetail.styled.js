@@ -64,6 +64,11 @@ export const StyledProjectDetail = styled.section`
     display: flex;
     align-items: center;
     gap: 3.8rem;
+
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   p {
@@ -77,5 +82,17 @@ export const StyledProjectDetail = styled.section`
   .buttons {
     display: flex;
     gap: 1.9rem;
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .contact {
+    svg {
+      color: var(--yellow);
+      padding-left: 1.6rem;
+    }
   }
 `;

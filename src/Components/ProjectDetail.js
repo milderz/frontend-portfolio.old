@@ -4,7 +4,11 @@ import { useParams, Link } from "react-router-dom";
 import { StyledProjectDetail } from "./Styles/ProjectDetail.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faArrowLeft, faEye } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeft,
+  faEye,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 import Tag from "./Tag";
 import { Fade } from "react-awesome-reveal";
 import SecondaryButton from "./SecondaryButton";
@@ -70,6 +74,19 @@ const ProjectDetail = () => {
                 ))}
               </div>
             </Fade>
+            <div className="contact">
+              <Fade>
+                <h3>Let's talk</h3>
+                <a
+                  href="mailto: mzunax@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  mzunax@gmail.com
+                  <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+                </a>
+              </Fade>
+            </div>
           </div>
         </StyledProjectDetail>
       ))}
