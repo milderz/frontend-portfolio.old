@@ -8,7 +8,6 @@ function Header() {
 
   const handleMobileMenuClick = () => {
     setMobileBtnActive(!mobileBtnActive);
-    console.log(mobileBtnActive);
   };
   return (
     <StyledHeader>

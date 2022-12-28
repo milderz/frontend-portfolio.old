@@ -1,5 +1,5 @@
 import { StyledSectionHeader } from "./Styles/SectionHeader.styled";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 function SectionHeader({ title, subtitle, id }) {
   return (
