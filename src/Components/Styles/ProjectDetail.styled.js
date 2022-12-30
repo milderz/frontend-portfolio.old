@@ -90,6 +90,15 @@ export const StyledProjectDetail = styled.section`
   }
 
   .contact {
+    a {
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      :hover {
+        color: var(--yellow);
+        text-decoration: underline;
+        text-decoration-color: var(--yellow);
+      }
+    }
     svg {
       color: var(--yellow);
       padding-left: 1.6rem;
