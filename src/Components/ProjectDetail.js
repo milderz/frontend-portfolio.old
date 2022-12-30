@@ -23,73 +23,77 @@ const ProjectDetail = () => {
 
   return (
     <>
-      {projects.map((project, index) => (
-        <StyledProjectDetail key={index}>
-          <div className="content">
-            <Fade>
-              <Link to="/" className="previous-button">
-                <FontAwesomeIcon icon={faArrowLeft} />
-                BACK
-              </Link>
-            </Fade>
-            <header>
+      {projects ? (
+        projects.map((project, index) => (
+          <StyledProjectDetail key={index}>
+            <div className="content">
               <Fade>
-                <h3>{project.projectName}</h3>
-                <div className="buttons">
-                  <SecondaryButton
-                    text="Preview website"
-                    icon={faEye}
-                    path={project.webLink}
-                  />
-                  <SecondaryButton
-                    text="Github code"
-                    icon={faGithub}
-                    path={project.githubLink}
-                  />
+                <Link to="/" className="previous-button">
+                  <FontAwesomeIcon icon={faArrowLeft} />
+                  BACK
+                </Link>
+              </Fade>
+              <header>
+                <Fade>
+                  <h3>{project.projectName}</h3>
+                  <div className="buttons">
+                    <SecondaryButton
+                      text="Preview website"
+                      icon={faEye}
+                      path={project.webLink}
+                    />
+                    <SecondaryButton
+                      text="Github code"
+                      icon={faGithub}
+                      path={project.githubLink}
+                    />
+                  </div>
+                </Fade>
+              </header>
+
+              <div
+                className="img-content"
+                style={{
+                  backgroundPosition: "top",
+                  backgroundSize: "cover",
+                  background:
+                    "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8))," +
+                    `url(${project.mainImage})`,
+                }}
+              ></div>
+              <Fade>
+                <p className="project-description">{project.longDescription}</p>
+              </Fade>
+              <Fade>
+                <div className="tags">
+                  {project.labels.map((label, index) => (
+                    <Tag
+                      key={index}
+                      tagName={label.text}
+                      tagColor={label.color}
+                    />
+                  ))}
                 </div>
               </Fade>
-            </header>
-
-            <div
-              className="img-content"
-              style={{
-                backgroundPosition: "top",
-                backgroundSize: "cover",
-                background:
-                  "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8))," +
-                  `url(${project.mainImage})`,
-              }}
-            ></div>
-            <Fade>
-              <p className="project-description">{project.longDescription}</p>
-            </Fade>
-            <Fade>
-              <div className="tags">
-                {project.labels.map((label, index) => (
-                  <Tag
-                    key={index}
-                    tagName={label.text}
-                    tagColor={label.color}
-                  />
-                ))}
+              <div className="contact">
+                <Fade>
+                  <h3>Let's talk</h3>
+                  <a
+                    href="mailto: mzunax@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    mzunax@gmail.com
+                    <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+                  </a>
+                </Fade>
               </div>
-            </Fade>
-            <div className="contact">
-              <Fade>
-                <h3>Let's talk</h3>
-                <a
-                  href="mailto: mzunax@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  mzunax@gmail.com
-                  <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-                </a>
-              </Fade>
             </div>
-          </div>
-        </StyledProjectDetail>
-      ))}
+          </StyledProjectDetail>
+        ))
+      ) : (
+        <></>
+      )}
     </>
   );
 };

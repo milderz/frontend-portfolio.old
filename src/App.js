@@ -76,6 +76,7 @@ function App() {
                   />
                   <ContactSection />
                 </Section>
+                {/* <Footer /> */}
               </>
             }
           />
@@ -84,11 +85,11 @@ function App() {
             element={
               <>
                 <ProjectDetail />
+                {/* <Footer /> */}
               </>
             }
           />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

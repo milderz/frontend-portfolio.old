@@ -14,9 +14,8 @@ function ProjectsGrid() {
   return (
     <StyledProjectsGrid>
       {projects.map((project, index) => (
-        <Fade cascade>
+        <Fade key={index}>
           <ProjectCard
-            key={index}
             projectName={project.projectName}
             shortDescription={project.shortDescription}
             mainImage={project.mainImage}
