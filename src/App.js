@@ -76,6 +76,7 @@ function App() {
                   />
                   <ContactSection />
                 </Section>
+                <Footer />
               </>
             }
           />
@@ -88,7 +89,6 @@ function App() {
             }
           />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
