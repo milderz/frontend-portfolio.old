@@ -45,17 +45,19 @@ function App() {
                   <div className="about-me-text">
                     <Fade cascade>
                       <p>
-                        I'm a frontend developer creating modern websites and
-                        apps that help businesses to grow and stand out over
-                        their competitors.
+                        As a frontend developer, I specialize in creating modern
+                        websites and apps that assist businesses in gaining an
+                        advantage over their competitors.
                       </p>
                       <p>
-                        I have an excellent knowledge of technologies like HTML,
-                        CSS, Javascript, SASS, Styled Components and React JS.
+                        My expertise includes working with technologies such as
+                        HTML, CSS, Javascript, SASS, Styled Components, and
+                        React JS.
                       </p>
                       <p>
-                        I'm also learning UX/UI basics to complement my coding
-                        skills.
+                        Additionally, I am currently in the process of learning
+                        the basics of UX/UI design to enhance my coding
+                        abilities.
                       </p>
                       <MainButton btnText="Download CV" icon={faDownload} />
                     </Fade>
