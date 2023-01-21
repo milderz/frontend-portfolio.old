@@ -83,6 +83,7 @@ function App() {
             }
           />
           <Route
+            exact
             path=":name"
             element={
               <>
